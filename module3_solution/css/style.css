@@ -10,7 +10,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  background-color: #7AC5CD;
+  background-color: #DCAE1D;
   border-radius: 0;
   border: 0;
   position: relative;
@@ -22,7 +22,7 @@ body {
   }
 
 .navbar-brand div {
-  color: black;
+  color: #00303F;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 5px;
@@ -37,11 +37,13 @@ body {
 }
 /** END OF HEADER **/ 
 
+/**MENU ITEMS**/
 h1 {
   font-family: Bahnschrift;
   margin-top: 10px;
   margin-bottom: 30px;
   font-size: 1.75em;
+  color: #00303F;
 }
 
 p {
@@ -55,8 +57,7 @@ p {
 }
 
 .item {
-  /*position: relative;*/
-  background-color: #F0CB8F;
+  background-color: #B5C5C7;
   padding: 10px;
   margin: 10px;
 }
@@ -65,14 +66,15 @@ p {
   text-align: center;
   font-size: 1.25em;
   font-weight: bold;
-  color: black;
+  color: #000000;
 }
 
 .item > p {
-  color: black;
+  color: #000000;
 }
+/**END OF MENU ITEMS**/
 
-/* For medium devices only (Desktop version) */
+/**For medium devices only (Desktop version)**/
 @media (min-width: 768px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -174,7 +176,7 @@ p {
   }
 
   #nav-list {
-  background-color: #7AC5CD;
+  background-color: #DCAE1D;
   z-index: 9999;
   position: relative
   }
@@ -186,10 +188,14 @@ p {
   }
 
   #nav-list a:hover {
-  background: #E7E7E7;
+  background: #E5E5C7;
   }
 
   .navbar-default button.navbar-toggle, button span.icon-bar {
-    border: 1px solid #2F4756;
+    border: 1px solid #00303F;
+  }
+
+  .navbar-default button.navbar-toggle:hover, .navbar-default button.navbar-toggle:focus {
+    background-color: #E5E5C7;
   }
 }
