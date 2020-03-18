@@ -8,93 +8,72 @@ body {
   font-size: 16px;
 }
 
+/** HEADER **/
+#header-nav {
+  background-color: #7AC5CD;
+  border-radius: 0;
+  border: 0;
+  position: relative;
+  height: 65px;
+}
+
+  nav#header-nav > div.container {
+  width: 100%;
+  }
+
+.navbar-brand div {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  line-height: .75;
+  font-family: Bahnschrift;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+/** END OF HEADER **/ 
+
 h1 {
   font-family: Bahnschrift;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   font-size: 1.75em;
 }
 
 p {
-  padding: 15px;
+  padding: 5px 15px 5px;
 }
 
 .row {
   width: 100%;
   font-family: Bahnschrift;
+  margin: auto;
 }
 
 .item {
-  position: relative;
-  background-color: #808080;
+  /*position: relative;*/
+  background-color: #F0CB8F;
   padding: 10px;
-  border: 1px solid black;
   margin: 10px;
 }
 
 .item > div {
-  position: absolute;
-  top: 0;
-  right: 0;
   text-align: center;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  width: 33.33%;
   font-size: 1.25em;
   font-weight: bold;
+  color: black;
 }
 
 .item > p {
-  padding-top: 40px;
+  color: black;
 }
 
-#chicken {
-  background-color: #C89B99;
-}
-
-#beef {
-  background-color: #AD4E48;
-  color: white;
-}
-
-#pork {
-  background-color: #DFD19F;
-}
-
-/* For large devices only (Desktop version) */
-@media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-  }
-  .col-lg-1 {width: 8.33%;
-  }
-  .col-lg-2 {width: 16.66%;
-  }
-  .col-lg-3 {width: 25%;
-  }
-  .col-lg-4 {width: 33.33%;
-  }
-  .col-lg-5 {width: 41.66%;
-  }
-  .col-lg-6 {width: 50%;
-  }
-  .col-lg-7 {width: 58.33%;
-  }
-  .col-lg-8 {width: 66.66%;
-  }
-  .col-lg-9 {width: 74.99%;
-  }
-  .col-lg-10 {width: 83.33%;
-  }
-  .col-lg-11 {width: 91.66%;
-  }
-  .col-lg-12 {width: 100%;
-  }
-}
-
-/* For medium devices only (Tablet version)*/
-@media (min-width: 768px) and (max-width: 991px) {
+/* For medium devices only (Desktop version) */
+@media (min-width: 768px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
@@ -122,5 +101,95 @@ p {
   }
   .col-md-12 {width: 100%;
   }
+/*  ul .hidden-l {
+    visibility: hidden
+  }*/
 }
 
+/* For small devices only (Tablet version)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+  .col-sm-1 {width: 8.33%;
+  }
+  .col-sm-2 {width: 16.66%;
+  }
+  .col-sm-3 {width: 25%;
+  }
+  .col-sm-4 {width: 33.33%;
+  }
+  .col-sm-5 {width: 41.66%;
+  }
+  .col-sm-6 {width: 50%;
+  }
+  .col-sm-7 {width: 58.33%;
+  }
+  .col-sm-8 {width: 66.66%;
+  }
+  .col-sm-9 {width: 74.99%;
+  }
+  .col-sm-10 {width: 83.33%;
+  }
+  .col-sm-11 {width: 91.66%;
+  }
+  .col-sm-12 {width: 100%;
+  }
+   /*ul .hidden-l {
+    visibility: hidden
+  }*/
+  .navbar-toggle {
+    display: none;
+  }
+}
+
+/* For extra small devices only (Mobile version)*/
+@media (max-width: 575px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    float: left;
+  }
+  .col-1 {width: 8.33%;
+  }
+  .col-2 {width: 16.66%;
+  }
+  .col-3 {width: 25%;
+  }
+  .col-4 {width: 33.33%;
+  }
+  .col-5 {width: 41.66%;
+  }
+  .col-6 {width: 50%;
+  }
+  .col-7 {width: 58.33%;
+  }
+  .col-8 {width: 66.66%;
+  }
+  .col-9 {width: 74.99%;
+  }
+  .col-10 {width: 83.33%;
+  }
+  .col-11 {width: 91.66%;
+  }
+  .col-12 {width: 100%;
+  }
+
+  #nav-list {
+  background-color: #7AC5CD;
+  z-index: 9999;
+  position: relative
+  }
+
+  #nav-list a {
+  font-family: Bahnschrift;
+  color: black;
+  text-align: center;
+  }
+
+  #nav-list a:hover {
+  background: #E7E7E7;
+  }
+
+  .navbar-default button.navbar-toggle, button span.icon-bar {
+    border: 1px solid #2F4756;
+  }
+}
